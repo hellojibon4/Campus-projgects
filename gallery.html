@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASSIGNMENT-6</title>
+  <link rel="shortcut icon" href="./assets/about.png" type="image/x-icon">
+
+  <!-- tailwind + daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50  text-gray-800">
+
+  <!-- navbar -->
+  <section class=" bg-[#15803d]">
+    <div class="navbar container mx-auto bg-[#15803d] shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>Plant a Tree</li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl md:text-2xl font-bold text-white">Green Earth</a>
+      </div>
+
+      <div class="navbar-center !hidden md:!flex">
+        <ul class="menu menu-horizontal flex justify-between px-2 md:gap-3">
+          <li class="text-white font-semibold"><a href="./index.html">Home</a></li>
+          <li class="text-white font-semibold"><a href="./about.html">About</a></li>
+          <li class="text-white font-semibold"><a>Plant a Tree</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+        <button class="btn rounded-full bg-[#facc15] text-[#15803d]">Plant a Tree</button>
+      </div>
+    </div>
+  </section>
+
+
+  <main class="container mx-auto py-12 px-4">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-[#006400] mb-4">
+        Our Mission in Action
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Explore the impact of your support. From planting events to the trees
+        we’ve grown, this gallery is a visual journey of our shared mission to
+        create a greener Earth for future generations.
+      </p>
+    </div>
+
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-700 mb-8 border-b-2 border-gray-200 pb-2">
+        Planting Events
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-1.jpg" alt="A group of volunteers planting trees together"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              Teamwork at our latest community planting event.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-2.jpg" alt="A person planting a tree with a shovel"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              Getting our hands dirty for a greener tomorrow.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-3.jpg" alt="Two people smiling after planting a tree"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              The joy of making a difference together.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-4.png" alt="Preparing the soil for planting"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              Preparing the land for new life.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallary-5.jpg" alt="A team briefing before the event"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              A quick briefing before we start planting.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallary-6.jpg" alt="Children participating in the planting"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              Inspiring the next generation of environmentalists.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-3xl font-bold text-gray-700 mb-8 border-b-2 border-gray-200 pb-2">
+        The Trees We've Grown
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-7.jpg" alt="A small, newly planted tree sapling"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              A young sapling taking root and beginning its journey.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-8.jpg" alt="A flourishing young tree with lush green leaves"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              One of our trees flourishing thanks to your support.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-9.jpg" alt="A close-up of a fruit tree with fruit"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              Fruit trees that are now providing for the community.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-10.jpg" alt="A close-up of new growth on a plant"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              The beautiful new growth that signals a healthy ecosystem.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-11.jpg" alt="An insect on a flower" class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              Our trees also provide vital habitats for pollinators.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+          style="height: 350px">
+          <img src="./assets/gallery-12.jpg" alt="A view of a newly planted trail"
+            class="w-full h-[300px] object-cover" />
+          <div class="p-4">
+            <p class="font-semibold text-gray-700">
+              The stunning new landscapes we've helped create.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="bg-[#14532D]">
+    <p class="text-xl text-white p-5 text-center">
+      © 2025 Green Earth. All Rights Reserved.
+    </p>
+  </section>
+</body>
+
+</html>
