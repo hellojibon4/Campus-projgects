@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT-6</title>
+    <link rel="shortcut icon" href="./assets/about.png" type="image/x-icon">
+
+    <!-- tailwind + daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#dcfce7] font-sans text-gray-800">
+
+    <!-- navbar -->
+    <section class=" bg-[#15803d]">
+        <div class="navbar container mx-auto bg-[#15803d] shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl md:text-2xl font-bold text-white">Green Earth</a>
+            </div>
+
+            <div class="navbar-center !hidden md:!flex">
+                <ul class="menu menu-horizontal flex justify-between px-2 md:gap-3">
+                    <li class="text-white font-semibold"><a href="./index.html">Home</a></li>
+                    <li class="text-white font-semibold"><a href="./about.html">About</a></li>
+                    <li class="text-white font-semibold"><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+                <button class="btn rounded-full bg-[#facc15] text-[#15803d]">Plant a Tree</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-12 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-[#006400] mb-4">Choose Your Trees</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Select a tree to plant and help us grow a greener future.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="w-full md:w-1/4">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Categories</h3>
+                    <div class="flex flex-col space-y-3">
+                        <button class="btn btn-success text-white category-btn" data-target="fruit-trees-section">
+                            Fruit Tree
+                        </button>
+                        <button class="btn btn-neutral category-btn" data-target="shade-trees-section">
+                            Shade Tree
+                        </button>
+                        <button class="btn btn-neutral category-btn" data-target="flowering-trees-section">
+                            Flowering Tree
+                        </button>
+                        <button class="btn btn-neutral category-btn" data-target="native-trees-section">
+                            Native Tree
+                        </button>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-3/4">
+
+                    <div id="fruit-trees-section" class="category-section">
+                        <h2 class="text-2xl font-bold mb-4 text-green-700">Fruit Trees</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-1.jpg" alt="Mango tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Mango Tree
+                                        <div class="badge badge-warning text-sm">Fruit</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A popular fruit tree, providing both shade and
+                                        delicious fruit.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$15</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-2.jpg" alt="Papaya tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Papaya Tree
+                                        <div class="badge badge-warning text-sm">Fruit</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A fast-growing tropical tree that produces sweet fruit
+                                        year-round.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$12</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-3.jpg" alt="Orange tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Orange Tree
+                                        <div class="badge badge-warning text-sm">Fruit</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A classic citrus tree, perfect for a sunny spot.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$18</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="shade-trees-section" class="category-section hidden">
+                        <h2 class="text-2xl font-bold mb-4 text-green-700">Shade Trees</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plants-4.jpg" alt="Oak tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Oak Tree
+                                        <div class="badge badge-info text-sm">Shade</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A symbol of strength, providing dense shade and a long
+                                        lifespan.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$25</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plants-5.jpg" alt="Maple tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Maple Tree
+                                        <div class="badge badge-info text-sm">Shade</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">Known for its vibrant autumn colors and impressive
+                                        canopy.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$22</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-6.jpg" alt="Banyan tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Banyan Tree
+                                        <div class="badge badge-info text-sm">Shade</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A vast tree with aerial roots, creating a massive
+                                        shaded area.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$30</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="flowering-trees-section" class="category-section hidden">
+                        <h2 class="text-2xl font-bold mb-4 text-green-700">Flowering Trees</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-7.jpg" alt="Cherry Blossom tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Cherry Blossom
+                                        <div class="badge badge-secondary text-sm">Flower</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">Produces stunning pink or white flowers in the spring.
+                                    </p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$20</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-8.jpg" alt="Jacaranda tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Jacaranda Tree
+                                        <div class="badge badge-secondary text-sm">Flower</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">Famous for its spectacular purple-blue flowers in warm
+                                        climates.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$24</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-9.jpg" alt="Magnolia tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Magnolia Tree
+                                        <div class="badge badge-secondary text-sm">Flower</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A classic southern tree with large, fragrant white or
+                                        pink flowers.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$28</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="native-trees-section" class="category-section hidden">
+                        <h2 class="text-2xl font-bold mb-4 text-green-700">Native Trees</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-10.jpg" alt="Pine tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Pine Tree
+                                        <div class="badge badge-ghost text-sm">Native</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">An evergreen that thrives in many climates and
+                                        supports local wildlife.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$10</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-11.jpg" alt="Willow tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Willow Tree
+                                        <div class="badge badge-ghost text-sm">Native</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A fast-growing tree often found near water, known for
+                                        its graceful branches.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$14</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <figure><img src="./assets/plants/plant-12.jpg" alt="Eucalyptus tree"
+                                        class="w-full h-48 object-cover" /></figure>
+                                <div class="card-body p-6">
+                                    <h2 class="card-title text-xl font-bold text-gray-800">
+                                        Eucalyptus Tree
+                                        <div class="badge badge-ghost text-sm">Native</div>
+                                    </h2>
+                                    <p class="text-gray-600 mb-4">A hardy native tree known for its unique scent and
+                                        rapid growth.</p>
+                                    <div class="card-actions justify-between items-center">
+                                        <span class="text-2xl font-bold text-green-600">$16</span>
+                                        <button class="btn bg-[#00d390]">Plant This Tree</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="bg-[#14532D]">
+            <p class="text-xl text-white p-5 text-center">
+                © 2025 Green Earth. All Rights Reserved.
+            </p>
+        </section>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const sections = document.querySelectorAll('.category-section');
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.classList.add('hidden');
+                    });
+
+                    // Remove active style from all buttons
+                    categoryButtons.forEach(btn => {
+                        btn.classList.remove('btn-success', 'text-white');
+                        btn.classList.add('btn-neutral');
+                    });
+
+                    // Get the target section from the button's data-target attribute
+                    const targetId = button.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+
+                    // Show the target section
+                    if (targetSection) {
+                        targetSection.classList.remove('hidden');
+                    }
+
+                    // Add active style to the clicked button
+                    button.classList.remove('btn-neutral');
+                    button.classList.add('btn-success', 'text-white');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
