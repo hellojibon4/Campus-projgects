@@ -55,6 +55,11 @@
         </div>
     </section>
 
+    <!-- Full Page Loader -->
+    <div id="full-page-loader" class="fixed inset-0 z-50 flex justify-center items-center bg-[#dcfce7]">
+        <span class="loading loading-dots loading-xxl text-green-700"></span>
+    </div>
+
     <main class="py-12 px-4">
         <div class="container mx-auto">
             <div class="text-center mb-12">
@@ -314,6 +319,13 @@
     </footer>
 
     <script>
+        // Full page loader hide on window load
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('full-page-loader');
+            setTimeout(() => {  // তুমি এখানে API বা content load অনুযায়ী delay adjust করতে পারো
+                loader.style.display = 'none';
+            }, 1000); // 1 second delay
+        });
         document.addEventListener('DOMContentLoaded', function () {
             const categoryButtons = document.querySelectorAll('.category-btn');
             const sections = document.querySelectorAll('.category-section');

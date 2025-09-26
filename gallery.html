@@ -53,7 +53,12 @@
     </div>
   </section>
 
+  <!-- Full Page Loader -->
+  <div id="page-loader" class="fixed inset-0 bg-white flex justify-center items-center z-50">
+    <span class="loading loading-dots loading-lg text-green-700"></span>
+  </div>
 
+  <!-- Main Content -->
   <main class="container mx-auto py-12 px-4">
     <div class="text-center mb-12">
       <h1 class="text-4xl md:text-5xl font-extrabold text-[#006400] mb-4">
@@ -213,6 +218,16 @@
       </div>
     </div>
   </main>
+
+
+  <!-- Script -->
+  <script>
+    window.addEventListener("load", function () {
+      document.getElementById("page-loader").style.display = "none";
+      document.getElementById("main-content").classList.remove("hidden");
+    });
+  </script>
+
 
   <section class="bg-[#14532D]">
     <p class="text-xl text-white p-5 text-center">

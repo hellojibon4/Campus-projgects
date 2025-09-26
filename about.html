@@ -55,71 +55,96 @@
   <!-- Main Content -->
   <main class="py-12 md:py-16">
     <section class="container mx-auto px-4 sm:px-6 md:px-10">
-      <!-- Our Mission -->
-      <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-12">
-        <div class="text-center mb-8">
-          <h1 class="text-3xl md:text-4xl font-extrabold text-green-800 mb-2">Our Mission</h1>
-          <p class="text-base md:text-lg text-gray-600">Making the Earth greener, one tree at a time.</p>
-        </div>
-        <div class="flex flex-col md:flex-row items-center md:space-x-8">
-          <div class="md:w-1/2">
-            <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              At <span class="font-semibold">Green Earth</span>, our mission is to combat climate change and
-              deforestation by fostering a global community dedicated to planting trees. We believe that every
-              individual can make a significant impact on the future of our planet.
-            </p>
-            <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-              We work with local communities and organizations to identify areas in need of reforestation,
-              ensuring that our efforts have a lasting positive effect on both the environment and local
-              ecosystems.
-            </p>
-          </div>
-          <div class="md:w-1/2 mt-6 md:mt-0">
-            <img src="./assets/about-1.jpg" alt="Volunteers planting trees"
-              class="w-full h-auto object-cover rounded-lg">
-          </div>
-        </div>
+
+      <!-- Full Page Loader -->
+      <div id="full-loader" class="flex justify-center items-center h-64">
+        <span class="loading loading-dots loading-xl text-green-700"></span>
       </div>
 
-      <!-- Our Story -->
-      <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-12">
-        <div class="text-center mb-8">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-green-800 mb-2">Our Story</h2>
-          <p class="text-base md:text-lg text-gray-600">How we began our journey.</p>
-        </div>
-        <div class="flex flex-col md:flex-row items-center md:space-x-8">
-          <div class="md:w-1/2 mb-6 md:mb-0">
-            <img src="./assets/about-2.jpg" alt="Seedlings growing" class="w-full h-auto object-cover rounded-lg">
-          </div>
-          <div class="md:w-1/2">
-            <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-              <span class="font-semibold">Green Earth</span> was founded in 2023 by a small group of
-              environmental enthusiasts who were passionate about making a tangible difference.
-            </p>
-            <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-              We started by planting trees in our local community and quickly realized the potential for a
-              larger, community-driven movement. Through word-of-mouth and the internet, our small project
-              grew into a global initiative.
-            </p>
-          </div>
-        </div>
-      </div>
+      <!-- Main Content -->
+      <div id="main-content" class="hidden">
 
-      <!-- Call To Action -->
-      <div class="text-center py-10 px-6 bg-green-700 rounded-lg shadow-xl text-white">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Our Mission</h2>
-        <p class="text-lg md:text-xl mb-6">
-          Be a part of the movement. Plant a tree and help us reach our goal.
-        </p>
-        <a href="#"
-          class="bg-yellow-400 text-green-900 font-bold py-2 md:py-3 px-6 md:px-8 rounded-full text-base md:text-lg hover:bg-yellow-500 transition duration-300">
-          Get Involved
-        </a>
+        <!-- Our Mission -->
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-12">
+          <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-green-800 mb-2">
+              Our Mission
+            </h1>
+            <p class="text-base md:text-lg text-gray-600">
+              Making the Earth greener, one tree at a time.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row items-center md:space-x-8">
+            <div class="md:w-1/2">
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+                At <span class="font-semibold">Green Earth</span>, our mission is to combat climate change and
+                deforestation by fostering a global community dedicated to planting trees. We believe that every
+                individual can make a significant impact on the future of our planet.
+              </p>
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                We work with local communities and organizations to identify areas in need of reforestation, ensuring
+                that our efforts have a lasting positive effect on both the environment and local ecosystems.
+              </p>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <img src="./assets/about-1.jpg" alt="Volunteers planting trees"
+                class="w-full h-auto object-cover rounded-lg">
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Story -->
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-12">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-green-800 mb-2">
+              Our Story
+            </h2>
+            <p class="text-base md:text-lg text-gray-600">How we began our journey.</p>
+          </div>
+          <div class="flex flex-col md:flex-row items-center md:space-x-8">
+            <div class="md:w-1/2 mb-6 md:mb-0">
+              <img src="./assets/about-2.jpg" alt="Seedlings growing" class="w-full h-auto object-cover rounded-lg">
+            </div>
+            <div class="md:w-1/2">
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+                <span class="font-semibold">Green Earth</span> was founded in 2023 by a small group of environmental
+                enthusiasts who were passionate about making a tangible difference.
+              </p>
+              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                We started by planting trees in our local community and quickly realized the potential for a larger,
+                community-driven movement. Through word-of-mouth and the internet, our small project grew into a global
+                initiative.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
 
-  <script src="./index.js"></script>
+  <script>
+    // Full page loader simulation
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('full-loader');
+      const content = document.getElementById('main-content');
+
+      setTimeout(() => { // এখানে তুমি API call বা data load এর জন্য adjust করতে পারো
+        loader.classList.add('hidden');
+        content.classList.remove('hidden');
+      }, 1000); // 1.5 seconds delay
+    });
+  </script>
+
+
+  <section class="bg-[#14532D]">
+    <p class="text-xl text-white p-5 text-center">
+      © 2025 Green Earth. All Rights Reserved.
+    </p>
+  </section>
+
+
+
 </body>
 
 </html>
